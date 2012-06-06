@@ -1,0 +1,18 @@
+# Needed debian packages:
+# python-magic (guessing mimetype)
+# python-lxml (docx)
+# python-imaging (docx)
+# xpdf-utils (pdftotext)
+# xmlstarlet (odt)
+# unzip (odt)
+
+
+
+# Maybe Useful:
+
+# HTML
+# http://www.aaronsw.com/2002/html2text/
+# http://www.unixuser.org/~euske/python/webstemmer/#extract
+
+# DOCX
+# https://github.com/mikemaccana/python-docx
