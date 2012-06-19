@@ -1,10 +1,15 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import subprocess
-import magic
-import sys
+try:
+	import sys
+	import subprocess
+	import magic
 
+except ImportError:
+	print  sys.exc_info()[1]
+	exit(127)
+	
 def usage():
 	""" Print out usage of this Program """
 	print 'Plainy extracts plaintext from various file formats.'
