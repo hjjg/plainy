@@ -48,7 +48,10 @@ if __name__ == '__main__':
             stdout=subprocess.PIPE).communicate()[0]
 
     if mime.startswith('text/html'):
-        print 'HTML'
+        print subprocess.Popen("w3m -dump "+ dfile \
+            , shell=True
+            , stdout=subprocess.PIPE).communicate()[0]
+
 
     if mime.startswith('application/zip') and dfile.endswith('.docx'):
         import docx
