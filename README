@@ -29,7 +29,11 @@
 # - http://code.google.com/p/tesseract-ocr/
 # - http://de.wikipedia.org/wiki/Tesseract_%28Software%29
 # - http://adnanvatandas.wordpress.com/2010/10/28/update-tesseract-3/
-
+# - https://help.ubuntu.com/community/OCR
+# 
+# gs -dNOPAUSE -sDEVICE=tiffg4 -r600x600 -dBATCH -sPAPERSIZE=a4 -sOutputFile=out.tif input.pdf
+# mogrify -brightness-contrast 10,80 -colorspace Gray -depth 8 +compress -format tif *.ppm
+# tesseract Output_File_Name.tif Name_of_TXT -l eng
 
 # Maybe Useful:
 # HTML
