@@ -22,6 +22,14 @@
 #   for fulltext search (stopwords? characters? getopt!)
 # - to be continued
 
+# TESSERACT:
+# There are debian packages, but they are outdated (2.x). 
+# Version 3.x supports layouts (googles pdf text overlay! yay!)
+#
+# - http://code.google.com/p/tesseract-ocr/
+# - http://de.wikipedia.org/wiki/Tesseract_%28Software%29
+# - http://adnanvatandas.wordpress.com/2010/10/28/update-tesseract-3/
+
 
 # Maybe Useful:
 # HTML
