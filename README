@@ -7,9 +7,23 @@
 # unzip (odt)
 # w3m (html)
 
+# TODO:
+# - Implement something for archives (extract, recursivly scan)
+# - More functions - extend __name__ = main part. plainy should 
+#   be usable as lib
+# - We need to add OCR. Free variants are tesseract-ocr / ocropus; 
+#   commercial ABBYY Finereader
+# - What about images in documents? Should the be processed or 
+#   should we provide them to external tools?
+# - Should we implement a feature to extract MIME from mails?
+#   See UUDeview, mpack/munpack
+# - decrease the dependencies to external tools
+# - implement a function to strip things from text, i.e. optimize
+#   for fulltext search (stopwords? characters? getopt!)
+# - to be continued
+
 
 # Maybe Useful:
-
 # HTML
 # http://www.aaronsw.com/2002/html2text/
 # http://www.unixuser.org/~euske/python/webstemmer/#extract
