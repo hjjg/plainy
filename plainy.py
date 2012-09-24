@@ -10,7 +10,7 @@ except ImportError:
     print "Python failed to load some modules:"
     print  sys.exc_info()[1]
     exit(127)
-    
+
 def usage():
     """ Print out usage of this Program """
     print 'Plainy extracts plaintext from various file formats.'
@@ -18,7 +18,7 @@ def usage():
     sys.exit()
 
 if __name__ == '__main__':
-    try: 
+    try:
         dfile = sys.argv[1]
     except:
         usage()
@@ -58,3 +58,10 @@ if __name__ == '__main__':
         document = docx.opendocx(dfile)
         paratextlist = docx.getdocumenttext(document)
         print '\n\n'.join(paratextlist)
+
+    if mime.startswith('application/x-rar') and dfile.endswith('.rar'):
+        print subprocess.Popen("rar x " + dfile \
+            , shell=True, \
+            stdout=subprocess.PIPE).communicate()[0]
+
+
